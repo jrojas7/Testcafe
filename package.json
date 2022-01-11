@@ -1,0 +1,28 @@
+{
+  "name": "testcafe-testing3",
+  "version": "1.0.0",
+  "description": "Automated testing with TestCafe",
+  "main": "index.js",
+  "scripts": {
+    "test:chrome": "testcafe chrome ./tests -s takeOnFails=true --disable-page-caching",
+    "test:chrome:5": "testcafe -c 5 chrome ./tests -s takeOnFails=true",
+    "test:chrome:headless": "testcafe chrome:headless ./tests -s takeOnFails=true",
+    "test:chrome:headless:5": "testcafe -c 5 chrome:headless ./tests -s takeOnFails=true",
+    "test:chrome:mobile": "testcafe chrome:emulation:device=samsung S ./tests -s takeOnFails=true",
+    "test:firefox": "testcafe firefox ./tests -s takeOnFails=true",
+    "test:opera": "testcafe opera ./tests -s takeOnFails=true",
+    "test:edge": "testcafe edge ./tests -s takeOnFails=true",
+    "test:multiple": "testcafe chrome,firefox,edge,opera ./tests -s takeOnFail=true",
+    "start-jenkins-server": "java -jar jenkins.war -httpPort=8080 --enable-future-java"
+  },
+  "keywords": [
+    "TestCafe",
+    "Testing",
+    "Automation"
+  ],
+  "author": "JC",
+  "license": "ISC",
+  "dependencies": {
+    "testcafe": "^1.18.1"
+  }
+}
