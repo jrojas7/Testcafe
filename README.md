@@ -1,2 +1,2 @@
 # Testcafe
-Examples of exercises in TestCafe
+Examples of exercises on TestCafe tool.
